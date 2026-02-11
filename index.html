@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <!-- Logo -->
+    <img src="img/logo.png" alt="Logo" class="logo">
+
+    <!-- Swiper Slider -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.district.in/movies-assets/images/cinema/F1-e8821860-41ed-11f0-aa9f-8fefdb33bbbf.jpg?format=webp&imwidth=256"
+            alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://image.tmdb.org/t/p/original/cf7hE1ifY4UNbS25tGnaTyyDrI2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/65_film_teaser_poster.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/261/2025/02/22162818/wTxYZNj3NselE9H9dST2GUn4UYE1-scaled.jpg"
+            alt="">
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+            alt="">
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- Scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="thing">
+      <form class="form" action="javascript:void(0)">
+        <input type="text" placeholder="Search movies...">
+
+        <select class="sortCategory">
+          <option value="all">All Categories</option>
+          <option value="Action">Action</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+        </select>
+        <select class="sortYear">
+          <option value="all">All Years</option>
+          <option value="new">Newest</option>
+          <option value="old">Oldest</option>
+        </select>
+
+        <select class="sortName">
+          <option value="all">All Names</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+        </select>
+
+        <button type="button">Submit</button>
+      </form>
+    </div>
+  </header>
+
+  <section>
+    <div class="kartochki"></div>
+  </section>
+
+  <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+
+</html>
